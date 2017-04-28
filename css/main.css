@@ -245,3 +245,7 @@ p.footer-text {
     color: white;
     font-size: 0.7em;
 }
+
+p a {
+  color: white;
+}
