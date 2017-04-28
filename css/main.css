@@ -236,8 +236,6 @@ div#social a {
     background-color: #285076;
     padding: 1em 1em 1em 1em;
     display: block;
-    height: 3em;
-
 }
 
 p.footer-text {
@@ -248,4 +246,9 @@ p.footer-text {
 
 p a {
   color: white;
+}
+
+p a:hover {
+    background-color: #559EE2;
+    color: white;
 }
