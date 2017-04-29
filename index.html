@@ -32,7 +32,7 @@
         <div class="col-md-12">
           <div class="logo">
             <a class="site-logo" href="index.html" title="Home page">
-                <img id="img-site-logo" src="img/logo.svg" alt="Logo of Ilyar's Portfolio page">
+                <img class="img-site-logo" src="img/logo.svg" alt="Logo of Ilyar's Portfolio page">
             </a>
           </div>
         </div>
@@ -58,8 +58,6 @@
     </div>
 </header>
 
-<div class="main">
-
     <!-- Page banner-->
         <picture id="banner">
             <source media="(min-width: 750px)" srcset="img/banner-1600_large_2x.jpg 2x, img/banner-800_large_1x.jpg" />
@@ -67,16 +65,21 @@
             <img src="img/banner_small.jpg" alt="Panoramic picture">
         </picture>
 
+<div class="container-fluid">
+  <div class="row">
+    <div class="main">
+
     <!-- About section-->
     <section id="about">
 
-            <h2>about</h2>
-            <div id="about-content">
+        <h2>about</h2>
+        <div class="col-lg-12">
+            <div class="about-content">
                 <p class="lead">Holla! This is all about me, right? I mean this page. So let me introduce myself. My name is Ilyar Mnazhdin, I'm an senior computer engineering student from Kazakhstan. Currently, studying and living in Kayseri/Turkey. I also taking Udacity Full Stack Web Developer Nanodegree.</p>
             </div>
-
-        <div class="container-fluid">
-          <div class="row">
+        </div>
+    <!--    <div class="container-fluid">
+          <div class="row"> -->
             <div class="col-sm-6">
               <figure>
                 <picture>
@@ -89,22 +92,19 @@
             <div class="col-sm-6">
                 <p class="introduction"> I do code, smile and joke for a living! I do many other things for example I try to take nice photographs - header photo in this page is made by myself (this black and white photo made by my friend). I like to play the midi keyboard, but nowadays I don't have much time for that, this is my last year at university and I need to study hard. I have a girlfried, her name is Alua, she is supports me in everything, and I am really glad for this, because sometimes I can really get into the development stuff.</p>
             </div>
-          </div>
-        </div>
+    <!--      </div> Row div
+        </div> container fluid div-->
     </section>
 
-    <section id="projects">
+    <section class="projects">
         <h2>projects</h2>
-        <div class="container-fluid">
-          <div class="row">
             <div class="col-md-12">
                 <p class="lead">
                     Unfortunately, I don't have any finished projects for now. So, I filled this section with photos.
                 </p>
-            </div>
           </div>
-          <div class="row">
-            <div class="col-md-4">
+        <div class="row">
+            <div class="col-sm-4">
                 <figure>
                     <picture>
                         <source media="(min-width: 750px)" srcset="img/gf-1600_large_2x.jpg 2x, img/gf-800_large_1x.jpg" />
@@ -114,7 +114,7 @@
                     <figcaption>Me and my girlfriend</figcaption>
                 </figure>
             </div>
-            <div class="col-md-4">
+            <div class="col-sm-4">
                 <figure>
                     <picture>
                         <source media="(min-width: 750px)" srcset="img/picnic-1600_large_2x.jpg 2x, img/picnic-800_large_1x.jpg" />
@@ -124,39 +124,46 @@
                 <figcaption>Picnic with my friends</figcaption>
                 </figure>
             </div>
-            <div class="col-md-4">
+            <div class="col-sm-4">
                 <figure>
                     <picture>
                         <source media="(min-width: 750px)" srcset="img/sunset-1600_large_2x.jpg 2x, img/sunset-800_large_1x.jpg" />
                         <source media="(min-width: 500px)" srcset="img/sunset_medium.jpg" />
                         <img id="img_projects" src="img/sunset_small.jpg" alt="Looking to sunset">
                     </picture>
-                <figcaption>Looking to sunset</figcaption>
+                <figcaption>Looking at sunset</figcaption>
                 </figure>
             </div>
-          </div>
-        </div>
     </section>
 
-    <section id="contacts">
+    <section class="contacts">
+        <div class="col-sm-12">
         <h2>contacts</h2>
-            <div id="social">
+            <div class="social">
                 <a target="_blank" href="https://twitter.com/vesterito"><i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter</a>
                 <a target="_blank" href="https://www.facebook.com/ilyarmnazhdin"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</a>
                 <a target="_blank" href="https://github.com/ilyarmnzhdn"><i class="fa fa-github-square" aria-hidden="true"></i> Github</a>
                 <a target="_blank" href="https://www.linkedin.com/in/ilyarmnazhdin/"><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a>
             </div>
+        </div>
     </section>
 
-</div>
+      </div> <!-- main div -->
+    </div> <!-- Row div -->
+</div> <!-- Container-fluid div -->
 
 <!-- Footer -->
+
 <footer class="site-footer">
-        <div class="container-fluid">
-            <p class="footer-text">
-                Coded and designed with  ❤️ by <a target="_blank" href="https://github.com/ilyarmnzhdn">Ilyar Mnazhdin</a>
-            </p>
-        </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="footer-text">
+                    Coded and designed with  ❤️ by <a target="_blank" href="https://github.com/ilyarmnzhdn">Ilyar Mnazhdin</a>
+                </p>
+            </div> <!-- Fotter col-md-12 div -->
+        </div> <!-- Row div -->
+    </div>
 </footer>
 </body>
 </html>
